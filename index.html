@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>Survey Form</title>
+   
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking external CSS -->
+</head>
+
+<body>
+    <form class="survey-form">
+   
+        <h1>Survey Form</h1>
+       
+        <p>
+           Feel Free To Answer The Questions Below Based On Your Own Experience And Opinion.If You 
+           Are Not Convenient In Answering A Particular Question Please Skip It By Answering "No".
+           Every Answer would Be Very Appreciated. Thank You For Your Time
+        </p>
+        <!-- Form description -->
+        <div class="flex-parent-element">
+          
+            <div class="flex-child-element">
+              
+
+               
+                <div class="form-group">
+                    <label class="label" for="name">Your Name</label>
+                  
+                    <input class="input" type="text" id="name" name="name" placeholder="Enter your name" required />
+                   
+                </div>
+
+             
+                <div class="form-group">
+                    <label class="label" for="email">Your Email Address</label>
+                  
+                    <div class="email-group">
+                       
+                        <input class="input-email" type="email" id="email" name="email" placeholder="user@email.com" required />
+                       
+                        <!-- <select class="email-domain" id="email-domain" name="email-domain" required>
+                         
+                            <option value="@gmail.com">@gmail.com</option>
+                            <option value="@yahoo.com">@yahoo.com</option>
+                            <option value="@outlook.com">@outlook.com</option>
+                        </select> -->
+                    </div>
+                </div>
+
+                <!-- Phone number field -->
+                <div class="form-group">
+                    <label for="phone" class="label">Your Phone Number</label>
+                  
+                    <div class="phone-group">
+                        
+                        <!-- <select class="country-code" id="country-code" name="country-code" required>
+                            
+                            <option value="+91">+91</option>
+                            <option value="+44">+44</option>
+                            <option value="+81">+81</option>
+                            
+                        </select> -->
+                        <input type="tel" class="phone-number" id="phone" name="phone" placeholder="9999999999"
+                            required />
+                        <!-- Phone number input -->
+                    </div>
+                </div>
+
+                <!-- Location field -->
+                <div class="form-group">
+                    <label for="location" class="label">Where Do You Live?</label>
+                    <!-- Label for location select -->
+                    <select id="location" name="location" required>
+                        <!-- Location dropdown -->
+                        <option value="" disabled selected>Select</option>
+                        <option value="city1">Delhi</option>
+                        <option value="city2">Mumbai</option>
+                        <option value="city3">Chicago</option>
+                    </select>
+                </div>
+
+                <!-- Age radio buttons -->
+                <div class="radio-button">
+                    <label class="age-label">Age</label>
+                    <!-- Age radio button group label -->
+                    <div class="age-group">
+                        <!-- Grouping age radio buttons -->
+                        <label class="label"><input type="radio" name="age" value="15-20" required />
+                            15-20</label><br />
+                        <!-- Age 15-20 -->
+                        <label class="label"><input type="radio" name="age" value="20-30" required />
+                            20-30</label><br />
+                        <!-- Age 20-30 -->
+                        <label class="label"><input type="radio" name="age" value="31-40" required />
+                            31-40</label><br />
+                        <!-- Age 31-40 -->
+                        <label class="label"><input type="radio" name="age" value="41-50" required />
+                            41-50</label><br />
+                        <!-- Age 41-50 -->
+                        <label class="label"><input type="radio" name="age" value="prefer-not-to-say" required />
+                            Prefer not to say</label>
+                        <!-- Prefer not to say -->
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="proficiency" class="label">How would you rate your proficiency in coding:</label>
+                   
+                    <div class="radio-group">
+                      
+                        <label class="label"><input type="radio" id="beginner" name="proficiency" value="beginner"
+                                required />
+                            Beginner</label><br />
+                       
+                        <label class="label"><input type="radio" id="intermediate" name="proficiency"
+                                value="intermediate" required />
+                            Intermediate</label><br />
+                       
+                        <label class="label"><input type="radio" id="advance" name="proficiency" value="advance"
+                                required />
+                            Advance</label><br />
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex-child-element">
+              
+
+                
+                <div class="form-group">
+                    <label class="label">Have You Ever Appeared in any coding contest?</label>
+                  
+                    <div class="radio-group">
+                        
+                        <label class="label"><input type="radio" name="coding-contest" value="yes" required />
+                            Yes</label><br />
+                       
+                        <label class="label"><input type="radio" name="coding-contest" value="no" required />
+                            No</label>
+                      
+                    </div>
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="passion" class="label">Discuss what drives your passion for coding and outline your
+                        aspirations in the field.</label>
+                   
+                    <textarea id="passion" name="passion" rows="4" required></textarea>
+                   
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="challenges" class="label">What are some of the challenges you face while coding?</label>
+                  
+                    <textarea id="challenges" name="challenges" rows="4" required></textarea>
+                   
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="data-structures" class="label">Please list the Data Structures you have a strong
+                        understanding
+                        of.</label>
+                   
+                    <textarea id="data-structures" name="data-structures" rows="4" required></textarea>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+           
+            <button type="submit">Submit Form</button>
+          
+        </div>
+    </form>
+</body>
+
+</html>
